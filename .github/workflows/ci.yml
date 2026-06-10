@@ -35,6 +35,10 @@ jobs:
           uv venv --python ${{ matrix.python-version }}
           uv sync
 
+      - name: Install test dependencies
+        run: |
+          if [ -f .venv/bin/pip ]; then .venv/bin/pip install pytest; fi
+
       - name: Run tests
         run: |
           uv run pytest -q
