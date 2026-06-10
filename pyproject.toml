@@ -1,0 +1,30 @@
+[project]
+name = "mflix_data_orchestration"
+version = "0.0.0"
+description = ""
+readme = "README.md"
+authors = [ { name = "Your Name", email = "you@example.com" } ]
+requires-python = ">=3.10,<3.11"
+dependencies = [
+	"dagster==1.7.7",
+	"dagster-cloud==1.7.7",
+	"dagster-snowflake==0.23.7",
+	"pymongo>=4.3.3",
+	"dlt[snowflake]>=0.3.5",
+	"scikit-learn==1.5.0",
+	"pytoml",
+	"uvicorn",
+]
+
+[project.optional-dependencies]
+dev = [
+	"dagster-webserver",
+	"pytest",
+]
+
+[build-system]
+requires = ["pdm-pep517>=0.13.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.dagster]
+module_name = "mflix_data_orchestration"

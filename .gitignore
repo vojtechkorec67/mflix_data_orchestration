@@ -1,0 +1,96 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.pyenv/
+
+# Environment variables / secrets
+.env
+.env.*
+secrets/
+*.pem
+*.key
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Mypy
+.mypy_cache/
+
+# IPython / Jupyter
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+*.err
+*.out
+compute_logs/
+
+# Dagster / DLT / temporary runtime storage
+.dlt/
+tmp*/
+tmp*/storage/
+tmp*/history/
+tmp*/schedules/
+
+# Project data outputs (generated artifacts)
+data/*.csv
+data/*.parquet
+data/*.png
+data/movie_embeddings/
+
+# Misc
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Build / packaging artifacts
+.dist-info/
+
+# Ignore egg-info at top-level
+*.egg-info
+
+# Local editor files
+*.iml
+
+# End of .gitignore
